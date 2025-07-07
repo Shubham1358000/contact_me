@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.cross-tag{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: #eebc0d;
+    border-radius: 50%;
+    cursor: pointer; 
+   
+}
+
+.cross-tag a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cross-tag:hover{
+    height: 29px;
+    width: 29px;
+    background-color: #b0b0af;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cross-tag a:hover{
+    transform: scale(1.1);
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    top: 70px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+}
+
+.socials a {
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+}
+
+.socials a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials svg {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+     fill: rgb(254, 252, 252);
+    background-color: #050505;
+}
+
+#github-icon svg{
+    background-color: white;
+    fill: #000;
+}
+
+#github-icon svg:hover {
+    background-color: rgb(12, 12, 12);
+    fill: white;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#linkedin-icon svg:hover {
+    background-color: rgb(31, 132, 255);
+    fill: white;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#instagram-icon svg:hover {
+    background-color: rgb(255, 31, 106);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 10px;
+    }
+
+    form {
+        width: vmin(80%);
+        max-width: 100%;
+        min-width: 300px;
+        height: 90%;
+        display: flex;
+    }
+
+    #question-message {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    label{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+   
+    #name {
+        font-size: 15px;
+        padding: 10px;
+        margin-top: -15px;
+        margin-bottom: -30px;
+    }
+    #email {
+        font-size: 15px;
+        padding: 10px;
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+
+    #message {
+        font-size: 15px;
+        padding: 10px;
+        margin-top: -15px;
+        margin-bottom: 0px;
+    }
+
+    input[type="submit"] {
+        font-size: 100px;
+        padding: 8px;
+        margin-bottom: 30px;
+    }
+     
+    #confirmation-message {
+        font-size: 16px;
+        text-align: center;
+        margin-top: -19px;
+    }
+    .socials {
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact {
+        padding: 5px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    input[type="submit"] {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact {
+        padding: 40px;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .contact {
+        padding: 60px;
+    }
+
+    form {
+        width: 40%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+
