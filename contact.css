@@ -151,7 +151,15 @@ input[type="submit"]:hover {
 
 @media (max-width: 600px) {
     .contact {
+         display: flex;
+        position: absolute;
+        left: 2px;
+        right: 2px;
+        margin: auto;
+        top: 110px;
         padding: 10px;
+        height: 72vh;
+        width: 90%;
     }
 
     form {
@@ -192,22 +200,19 @@ input[type="submit"]:hover {
         margin-top: -15px;
         margin-bottom: 0px;
     }
-
-    input[type="submit"] {
-        font-size: 100px;
-        padding: 8px;
-        margin-bottom: 30px;
-    }
      
     #confirmation-message {
         font-size: 16px;
         text-align: center;
-        margin-top: -19px;
+        margin-top: 34px;
     }
     .socials {
-        justify-content: center;
+         justify-content: center;
         align-items: center;
-        margin-top: 80px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
