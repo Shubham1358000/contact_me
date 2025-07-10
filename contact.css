@@ -156,7 +156,6 @@ input[type="submit"]:hover {
         left: 2px;
         right: 2px;
         margin: auto;
-        top: 141px;
         top: 100px;
         height: 68vh;
         width: 90%;
@@ -204,7 +203,6 @@ input[type="submit"]:hover {
     #confirmation-message {
         font-size: 16px;
         text-align: center;
-        margin-top: 16px;
         margin-top: 18px;
     }
     .socials {
